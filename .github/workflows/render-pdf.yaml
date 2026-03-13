@@ -1,9 +1,13 @@
 name: Generate PDF
 
 on:
-  pull_request:
+  pull_request_target:
+    types: 
+      - opened
+      - assigned
     branches:
       - main
+      
 permissions: 
   pull-requests: write 
 
